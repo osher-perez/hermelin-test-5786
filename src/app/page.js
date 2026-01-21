@@ -1,25 +1,12 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Posts from "./components/posts";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>Student Name</h1>
-
-            Here your app should come....
-
-        </div>
-      </main>
-    </div>
+    <main>
+      {/* Main page title */}
+      <h1>osher perez</h1>
+      {/* Posts component */}
+      <Posts />
+    </main>
   );
 }
